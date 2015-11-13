@@ -28,7 +28,7 @@ public class StartScreen implements Screen {
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         game.batch.begin();
-        game.font.draw(game.batch, game.glyphLayout, game.viewport.getScreenWidth() / 2 - glyphW / 2, game.viewport.getScreenHeight() / 2);
+        game.font.draw(game.batch, game.glyphLayout, game.viewport.getScreenWidth() / 2 - glyphW / 2, game.viewport.getScreenHeight() / 2 - glyphH / 2);
         game.batch.end();
         toGame();
     }

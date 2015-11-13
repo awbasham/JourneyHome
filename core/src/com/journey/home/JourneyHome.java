@@ -39,17 +39,11 @@ public class JourneyHome extends Game {
 		this.setScreen(new StartScreen(this));
 	}
 
-	@Override
-	public void resize(int width, int height) {
-        viewport.update(width, height, true);
-        camera.update();
-	}
-
     @Override
     public void render() {
         Gdx.gl.glClearColor(1, 1, 1, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
+        
         camera.update();
         super.render();
     }
